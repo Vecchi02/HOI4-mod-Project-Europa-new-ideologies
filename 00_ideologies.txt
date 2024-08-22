@@ -1,5 +1,4 @@
 ideologies = {
-	
 	democratic = {
 	
 		types = {
@@ -60,7 +59,6 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
 
-
 	communism = {
 		
 		types = {
@@ -116,7 +114,6 @@ ideologies = {
 		faction_modifiers = {
 			
 		}
-
 	}
 
 	fascism = {
@@ -233,4 +230,187 @@ ideologies = {
 
 		ai_neutral = yes # 
 	}
+
+	republic = {	
+		allowed = {
+		if = {
+			limit = {
+				
+			}
+		}
+		types = {		
+			aristocratic_republic  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			athenian_republic = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			democratic_republic  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			oligarchic_republic = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+			
+			plutocratic_republic = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+			
+			theocratic_republic = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_REPUBLIC_1"
+			"FACTION_NAME_REPUBLIC_2"
+			"FACTION_NAME_REPUBLIC_3"
+			"FACTION_NAME_REPUBLIC_4"
+			"FACTION_NAME_REPUBLIC_5"
+		}
+		
+		color = { 13 161 175 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}
+
+	monarchy = {	
+		allowed = {
+		if = {
+			limit = {
+				date > "9697.1.1"
+            	date < "9697.3.3"
+			}
+		}
+		types = {		
+			aristocratic_monarchy  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			autocratic_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			dictatorhip_monarchy  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			imperial_cult_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+			
+			empire_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+			
+			plutocratic_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			stratocratic_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			theocratic_monarchy = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_MONARCHY_1"
+			"FACTION_NAME_MONARCHY_2"
+			"FACTION_NAME_MONARCHY_3"
+			"FACTION_NAME_MONARCHY_4"
+			"FACTION_NAME_MONARCHY_5"
+		}
+		
+		color = { 149 136 168 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}	
+
+	tribe = {	
+		allowed = {
+		if = {
+			limit = {
+				date > "9697.1.1"
+            	date < "9697.3.3"
+			}
+		}
+		types = {		
+			federated_tribe  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			migratory_tribe = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+
+			settled_tribe  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_TRIBE_1"
+			"FACTION_NAME_TRIBE_2"
+			"FACTION_NAME_TRIBE_3"
+			"FACTION_NAME_TRIBE_4"
+			"FACTION_NAME_TRIBE_5"
+		}
+		
+		color = { 29 77 12 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}	
 }
