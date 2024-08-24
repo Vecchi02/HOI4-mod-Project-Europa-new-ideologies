@@ -232,12 +232,6 @@ ideologies = {
 	}
 
 	republic = {	
-		allowed = {
-		if = {
-			limit = {
-				
-			}
-		}
 		types = {		
 			aristocratic_republic  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
 
@@ -292,14 +286,7 @@ ideologies = {
 		ai_neutral = yes # 
 	}
 
-	monarchy = {	
-		allowed = {
-		if = {
-			limit = {
-				date > "9697.1.1"
-            	date < "9697.3.3"
-			}
-		}
+	monarchy = {
 		types = {		
 			aristocratic_monarchy  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
 
@@ -358,14 +345,7 @@ ideologies = {
 		ai_neutral = yes # 
 	}	
 
-	tribe = {	
-		allowed = {
-		if = {
-			limit = {
-				date > "9697.1.1"
-            	date < "9697.3.3"
-			}
-		}
+	tribe = {
 		types = {		
 			federated_tribe  = {can_be_randomly_selected = no # won't be assigned to randomly generated country leaders}
 
